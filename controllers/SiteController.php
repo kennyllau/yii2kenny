@@ -60,7 +60,18 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        //getting all images
+        $images = [
+                '<img src="images/home1.jpg" class="img-responsive center-block"/>',
+                '<img src="images/pokehorizon.png" class="img-responsive center-block"/>',
+                '<img src="images/pingpongapp.png" class="img-responsive center-block"/>',
+                '<img src="images/stockgraph.png" class="img-responsive center-block"/>',
+                '<img src="images/ninjagold.png" class="img-responsive center-block"/>',
+                '<img src="images/doctorapp.png" class="img-responsive center-block"/>'
+                ];    
+        return $this->render('index',['images'=>$images]);
+
+        // return $this->render('index');
     }
 
     /**

@@ -4,12 +4,8 @@
 
 $this->title = 'My Yii Application';
 ?>
-<div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Hello!</h1>
 
-        <p><a class="btn btn-lg btn-success" href="#">lets make this site great!</a></p>
-    </div>
+<?php echo yii\bootstrap\Carousel::widget(['items'=>$images]); ?>
 
-</div>
+<h1 class="text-center">Welcome to my page!</h1>

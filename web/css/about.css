@@ -1,0 +1,59 @@
+#me{
+	border-radius: 50%;
+	/*height: 300px;*/
+	/*width: 300px;*/
+}
+
+/* row with circles*/
+#one{
+	background-color: #8CA293;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+#two{
+	background-color: #FFEBCD;
+	height: 200px;
+	border-radius: 50%;
+}
+#three{
+	background-color: #D4A29F;
+	height: 200px;
+	border-radius: 50%;
+}
+#four{
+	background-color: #C2E3FB;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+/* end of the circles */
+
+.service-icon {
+	margin-bottom: 20px;
+}
+.service-icon img{
+	height: 70px;
+	width: 70px;
+}
+
+@media (max-width:950px){
+    #one{
+        /*width: 200px;*/
+        display: none;
+	}
+	#two{
+		display: none;
+	}
+	#three{
+		display: none;
+	}
+	#four{
+		display: none;
+	}
+	#me{
+		border-radius: 50%;
+		height: 300px;
+		width: 300px;
+	}
+}

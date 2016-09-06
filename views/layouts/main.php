@@ -36,22 +36,22 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'Home', 'url' => Yii::$app->homeUrl],
             ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
             ['label' => 'Portfolio', 'url' => ['/site/portfolio']],
-            Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post', ['class' => 'navbar-form'])
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
+            ['label' => 'Contact', 'url' => ['/site/contact']],
+            // Yii::$app->user->isGuest ? (
+            //     ['label' => 'Login', 'url' => ['/site/login']]
+            // ) : (
+            //     '<li>'
+            //     . Html::beginForm(['/site/logout'], 'post', ['class' => 'navbar-form'])
+            //     . Html::submitButton(
+            //         'Logout (' . Yii::$app->user->identity->username . ')',
+            //         ['class' => 'btn btn-link']
+            //     )
+            //     . Html::endForm()
+            //     . '</li>'
+            // )
         ],
     ]);
     NavBar::end();
